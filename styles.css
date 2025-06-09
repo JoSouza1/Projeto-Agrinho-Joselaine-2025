@@ -1,0 +1,326 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f8f9fa; 
+    color: #795548;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #795548(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+header {
+    background-color: #795548;
+    color: #f0f8ea; 
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+header .logo img {
+    max-height: 80px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    background-color: #8bc34a; 
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f0f8ea;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #689f38;    outline: none; 
+}
+
+.hero {
+    background-image: url('hero_campo_cidade.jpg'); 
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 120px 0;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    border-radius: inherit;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+.call-to-action {
+    background-color: #a0522d; 
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.call-to-action:hover,
+.call-to-action:focus {
+    background-color: #795548;
+    outline: none;
+}
+
+.section {
+    padding: 40px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.section h2 {
+    color: #795548;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.benefit-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.benefit-cards .card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.benefit-cards .card img {
+    max-height: 60px;
+    margin-bottom: 15px;
+}
+
+.benefit-cards .card h3 {
+    color: #8bc34a;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.recipe-highlight {
+    background-color: #f0f8ea;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.recipe-highlight h3 {
+    color: #795548;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.recipe-highlight a {
+    display: inline-block;
+    background-color: #8bc34a;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.recipe-highlight a:hover,
+.recipe-highlight a:focus {
+    background-color: #689f38;
+    outline: none;
+}
+
+.event-list {
+    margin-top: 30px;
+}
+
+.event-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    margin-bottom: 15px;
+}
+
+.event-item h4 {
+    color: #5f4136;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.event-item a {
+    color: #8bc34a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.event-item a:hover,
+.event-item a:focus {
+    color: #689f38;
+    outline: none;
+}
+
+.interactive-section form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.interactive-section label {
+    font-weight: bold;
+    color: #555;
+}
+
+.interactive-section input[type="text"],
+.interactive-section textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.interactive-section button[type="submit"] {
+    background-color: #a0522d;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.interactive-section button[type="submit"]:hover,
+.interactive-section button[type="submit"]:focus {
+    background-color: #795548;
+    outline: none;
+}
+
+.interactive-section .hidden {
+    display: none;
+}
+
+footer {
+    background-color: #795548;
+    color: #f0f8ea;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+footer .social-links img {
+    max-height: 30px;
+}
+
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid #f0f8ea;
+    outline-offset: 2px;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #8bc34a;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
